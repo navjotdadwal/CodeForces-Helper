@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 
 export const OuterComponent = styled.div`
-   background-color : white; 
+   background-color : #E0E0E0; 
    height : 100vh;
    width : 100vw;
 `;
 
 export const InnerComponent = styled.div`
-   background-color : #E8E8E8; 
+   background-color : #C0C0C0; 
    height : 77vh;
    width : 70vw;
    margin : auto;
