@@ -10,7 +10,7 @@ import{
     MainComponent,
     Content,
     RowComponent,
-    SideBar
+    SideBar,
 } from './statisticsPageStyles';
 import StatisticsCard from '../../components/StatisticsCard/statisticsCard';
 import StatisticsLargeCard from '../../components/StatisticsLargeCard/statisticsLargeCard';
@@ -36,7 +36,12 @@ const StatisticsPage=()=>{
                   </RowComponent>
                   <RowComponent>
                     <div style={{marginTop: '15px'}}>
-                      <StatisticsLargeCard />
+                      <StatisticsLargeCard head={`Levels of ${user}`}/>
+                    </div>
+                  </RowComponent>
+                  <RowComponent>
+                    <div style={{marginTop: '15px'}}>
+                      <StatisticsLargeCard head={`Problem Ratings of ${user}`}/>
                     </div>
                   </RowComponent>
                 </Content>

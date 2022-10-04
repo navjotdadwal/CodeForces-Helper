@@ -7,7 +7,8 @@ import {
   } from "react-router-dom";
 import{
     OuterComponent,
-    MainComponent
+    MainComponent,
+    SideBar
 } from './upsolvePageStyles';
 
 
@@ -17,7 +18,9 @@ const UpSolvePage=()=>{
         <OuterComponent>
             <Navbar />
             <MainComponent>
+              <SideBar>
                 <ProSideBar username={user}/>
+              </SideBar>
             </MainComponent>
         </OuterComponent>            
       )

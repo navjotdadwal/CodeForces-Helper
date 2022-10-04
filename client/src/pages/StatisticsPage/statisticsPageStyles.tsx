@@ -5,20 +5,22 @@ export const OuterComponent = styled.div`
    background-color : white; 
    height : 100vh;
    width : 100vw;
+   display: grid;
    overflow-x: hidden;
    overflow-y: hidden;
 `;
 
 export const MainComponent = styled.div`
     display: flex;
-    flex-direction: row;
-    height : 100%;
-    overflow-y: auto;
+    overflow-y:auto
 `;
 
 export const SideBar = styled.div`
-    height : 100%;
-    overflow: hidden;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+    overflow-y: auto;
+    height: 100%;
 `;
 
 export const Content = styled.div`
