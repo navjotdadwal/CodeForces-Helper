@@ -10,7 +10,7 @@ import{
     MainComponent,
     Content,
     RowComponent,
-    SideBar,
+    SideBar
 } from './statisticsPageStyles';
 import StatisticsCard from '../../components/StatisticsCard/statisticsCard';
 import StatisticsLargeCard from '../../components/StatisticsLargeCard/statisticsLargeCard';
