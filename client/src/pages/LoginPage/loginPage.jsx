@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../components/Button/button';
 import Navbar from '../../components/Navbar/navbar';
+import Service from '../../service/main';
 import{
   MainComponent,
   OuterComponent
@@ -8,6 +9,11 @@ import{
 
 
 const LoginPage=()=>{
+  React.useEffect(() => {
+    var a=new Service();
+    a.getDataByUsername("navjot1234","problem_ratings")
+  }, []);
+      
       return(
           <OuterComponent>
             <Navbar />
